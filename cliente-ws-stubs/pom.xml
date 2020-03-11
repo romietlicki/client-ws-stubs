@@ -22,6 +22,7 @@
 		<version>2.3.1-b20150201.1248</version>
 		<configuration>
 			<xdebug>true</xdebug>
+			<!-- caminho do seu src (onde esta o seu codigo java) -->
 			<sourceDestDir>src</sourceDestDir>
 			<wsdlUrls>
 				 <wsdlUrl>http://www.dneonline.com/calculator.asmx?WSDL</wsdlUrl> 
