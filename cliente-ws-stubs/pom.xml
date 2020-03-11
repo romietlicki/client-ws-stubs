@@ -15,6 +15,7 @@
         </configuration>
       </plugin>
 
+<!-- plugin para criacao dos stubs pelo maven usando o comando jaxws:wsimport nos goals do maven -->
 	<plugin>
 		<groupId>org.jvnet.jax-ws-commons</groupId>
 		<artifactId>jaxws-maven-plugin</artifactId>
