@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cliente-ws-stubs</groupId>
+  <artifactId>cliente-ws-stubs</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+
+	<plugin>
+		<groupId>org.jvnet.jax-ws-commons</groupId>
+		<artifactId>jaxws-maven-plugin</artifactId>
+		<version>2.3.1-b20150201.1248</version>
+		<configuration>
+			<xdebug>true</xdebug>
+			<sourceDestDir>src</sourceDestDir>
+			<wsdlUrls>
+				 <wsdlUrl>http://www.dneonline.com/calculator.asmx?WSDL</wsdlUrl> 
+				<!--<wsdlUrl>http://webservices.amazon.com/AWSECommerceService/AWSECommerceService.wsdl</wsdlUrl>--> 
+				-->
+				<!--<wsdlUrl>https://svn.apache.org/repos/asf/airavata/sandbox/xbaya-web/test/Calculator.wsdl</wsdlUrl> -->
+			</wsdlUrls>
+
+			<vmArgs>
+				<vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+			</vmArgs>
+		</configuration>
+	</plugin>
+      
+    </plugins>
+  </build>
+</project>
